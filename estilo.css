@@ -3,10 +3,48 @@
 :root{
     --fuenteInter: "Inter", sans-serif;
     --colorFondoMain: #E5E5E5;
+    --colorFont:  darkblue; 
 }
 
 * {
     padding: 0;
     margin: 0;
 }
+
+body{
+    box-sizing: border-box;
+    background-color: var(--colorFondoMain);
+    color: var(--colorFont);
+}
+
+main{
+    display: flex;
+    padding: 168px 240px;
+    margin: 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor_uno_input{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuenteInter);
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+.contenedor_uno_boton{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buton{
+    width: 328px;
+    height: auto;
+    border-radius: 24px;
+}
+/*Revisar como aplicar la configuracion a todos los botones de una vez
 
