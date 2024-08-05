@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Tiny5&display=swap');
 
 :root{
     --fuenteInter: "Inter", sans-serif;
+    --fuente2: "Tiny5", sans-serif;
+    --fuente3: "Cute Font", sans-serif;
     --colorFondoMain: #E5E5E5;
-    --colorFont:  darkblue; 
+    --colorDarkBlue:  darkblue; 
+    --colorWhite: white;
+    --colorbeich: #D8DFE8; 
 }
 
 * {
@@ -14,37 +20,194 @@
 body{
     box-sizing: border-box;
     background-color: var(--colorFondoMain);
-    color: var(--colorFont);
+    color: var(--colorDarkBlue);
 }
 
 main{
     display: flex;
-    padding: 168px 240px;
-    margin: 0%;
+    /*padding: 40px 240px;*/
+    padding: 2% 10%;
     justify-content: space-between;
     align-items: center;
 }
 
+.subcontenedoruno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*width: 1280px;*/
+    width: 80em;
+    /*height: 944px;*/
+    height: 59em;
+    background-color: var(--colorFondoMain);
+    border-radius: 32px;
+    /*gap:32px;*/
+    gap: 2em;
+}
+
+.contenedor_uno_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /*height: 100px;*/
+    height: 6.25em;
+    /*padding-top: 30px;*/
+    padding-top: 1.875em;
+    /*padding-left: 20px;*/
+    padding-left: 1.25em;    
+}
+
+h1{
+    font-family: var(--fuente2);
+    /*font-size:70px;*/
+    font-size: 4.375em ;
+    
+}
 .contenedor_uno_input{
     display: flex;
     flex-direction: column;
     font-family: var(--fuenteInter);
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size: 2em;
     font-weight: 400;
-
+    justify-content: center;
+    align-items: center;
+    /*padding-left: 240px;*/
+    padding-left: 7.5em;
 }
 
-.contenedor_uno_boton{
+textarea{
+    /*width: 1000px;*/
+    width: 31.4em;
+    /*height: 588px;*/
+    height: 19em;
+    background-color: var(--colorFondoMain);
+    border: none;
+    font-family: var(--fuente3);
+    /*font-size: 32px;*/
+    font-size: 1em ;
+    font-weight: 400;
+    background-color:var(--colorFondoMain);
+}
+
+.mensajealerta{
+    display: flex;
+    flex-direction: row;
+    /*gap:16px;*/
+    gap: 1em;
+    /*padding-left: 260px;*/
+    padding-left: 16.25em;
+}
+
+.imagen{
+    /*width: 16px;*/
+    width: 1em;
+    /*height: 16px;*/
+    height: 1em;
+}
+.contenedorb{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;  
+    /*padding-bottom: 32px;*/
+    padding-bottom: 2em;
 }
 
-.buton{
-    width: 328px;
-    height: auto;
+.uno{
+    /*padding-left: 240px;*/
+    padding-left: 15em;
+}
+
+.boton{
+    /*width: 328px;*/
+    width: 16em;
+    /*height: 67px;*/
+    height: 3.29em;
+    border: solid var(--colorDarkBlue) 2px;
     border-radius: 24px;
+    font-family: var(--fuente2);
+    /*font-size: 20px;*/
+    font-size: 1.25em;
+    font-weight: 400; 
+    
 }
-/*Revisar como aplicar la configuracion a todos los botones de una vez
 
+.one{
+    background-color: var(--colorDarkBlue);
+    color: var(--colorWhite);
+}
+
+.two, .three{
+    background-color: var(--colorbeich);
+    color: var(--colorDarkBlue);
+}
+
+.contenedor_dos{
+    /*padding: 40px;*/
+    padding: 2.5em;
+}
+
+.subcontenedordos{
+    display: flex;
+    flex-direction: column;
+    /*width: 400px;*/
+    width: 25em;
+    /*height: 944px;*/
+    height: 58.5em;
+    background-color: var(--colorWhite);
+    border-radius: 32px;
+    justify-content:center;
+    align-items: center  ;
+    /*gap: 32px;*/
+    gap:2em;
+    /*padding-top: 24px;*/
+    padding-top: 1.4em;
+}
+
+.contenedor_dos_output{
+    display: flex;
+    flex-direction: column;
+    /*width: 336px;*/
+    width: 21em;
+    /*height: 781px;*/
+    height: 48.81em;
+    justify-content: center;
+    align-items: center;  
+    /*gap:16px;*/
+    gap: 1em;
+}
+
+h3{
+    font-family: var(--fuente2);
+    /*font-size: 27px;*/
+    font-size: 1.6875em;
+    text-wrap:wrap;
+    text-align: center;
+}
+
+p{
+    font-family: var(--fuenteInter);
+    /*font-size: 16px;*/
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+footer{
+    display: flex;
+    /*padding: 40px;*/
+    padding: 2.5em;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorDarkBlue);
+}
+
+.footer{
+    font-family: var(--fuenteInter);
+    /*font-size: 20px;*/
+    font-size: 1.25em;
+    color: var(--colorWhite);
+}

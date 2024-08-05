@@ -9,34 +9,43 @@
 </head>
 <body>
     <header></header>
-
-
-
     <main>
         <section class="contenedor_uno">
-            <div class="contenedor_uno_input">
-                <textarea name="entrada" id="entrada" rows="20" cols="70">Ingrese el texto aqui</textarea>
-            </div>
-            <div class="contenedor_uno_boton">
-                <button class="buton_One">Encriptar</button>
-                <button class="buton_Two">Desencriptar</button>
+            <div class="subcontenedoruno">
+                <div class="contenedor_uno_title">
+                    <h1>ENCRIPTEXT 2000 </h1>
+                </div>
+                <div class="contenedor_uno_input">
+                    <textarea name="entrada" id="entrada" rows="40" cols="150" autofocus required>Ingrese el texto aqui</textarea>
+                </div>
+                <div class="mensajealerta">
+                    <img class="imagen" src="./Imagenes/OIP.jpeg" alt="logo alerta">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="contenedorb uno">
+                    <button class="boton one">Encriptar</button>
+                    <button class="boton two">Desencriptar</button>
+                </div>
             </div>
         </section>
         <section class="contenedor_dos">
-            <div class="contenedor_dos_output">
-                <textarea name="salida" id="salida">
-                    Ningún mensaje fue encontrado
-                    Ingresa el texto que desees encriptar o desencriptar.
-                </textarea>
-            </div>
-            <div class="contenedor_dos_boton">
-                <button class="buton_three">Copiar</button>
+            <div class="subcontenedordos">
+                <div class="contenedor_dos_output">
+                    <img class="image" src="./Imagenes/search.jpeg" alt="logo buscar">
+                    <h3>Ningún mensaje fue encontrado 🔎</h3>
+                    <p> Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="contenedorb dos">
+                    <button class="boton three">Copiar</button>
+                </div>
             </div>
         </section>
     </main>
 
 
 
-    <footer></footer>
+    <footer>
+        <p class="footer"> Encriptador Challenge ONE &copy; Monica Jazmin Diaz 2024</p>
+    </footer>
 </body>
 </html>
