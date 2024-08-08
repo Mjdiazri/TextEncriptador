@@ -2,6 +2,7 @@ let texto = "aeiouAEIOUZZZKLJFDNFALKVN";
 let ffilter = [];
 let sfilter = [];
 
+
 function encriptar(){
     ffilter = texto.split('');
     sfilter = ffilter.map((caracter) => {
