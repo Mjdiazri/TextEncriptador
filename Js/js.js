@@ -1,8 +1,17 @@
-let texto = "aeiouAEIOUZZZKLJFDNFALKVN";
+let texto = "";
 let ffilter = [];
 let sfilter = [];
 
 
+
+function catchText(){
+    texto = document.getElementById("entradaTextarea").value;
+    console.log(texto)
+}
+
+catchText();
+
+/*
 function encriptar(){
     ffilter = texto.split('');
     sfilter = ffilter.map((caracter) => {
@@ -22,13 +31,13 @@ function encriptar(){
     });
 }
 
-
-
-encriptar()
+boton1.addEventListener('click', encriptar,true);
+*/
+/*encriptar()
 
 console.log(ffilter);
 console.log(sfilter);
-
+*/
 
 
 

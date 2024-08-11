@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Estilos/estilo.css">
+    <link rel="stylesheet" href="/Estilos/estilo.css">
     <title>Encriptador</title>
 </head>
 <body>
@@ -15,10 +15,10 @@
                     <h1>ENCRIPTEXT 2000 </h1>
                 </div>
                 <div class="contenedor_uno_input">
-                    <textarea name="entrada" id="entradaTextarea" rows="40" cols="150" autofocus required>Ingrese el texto aqui</textarea>
+                    <textarea name="entrada" id="entrada" autofocus required placeholder="Ingrese el texto aqui..."></textarea>
                 </div>
                 <div class="mensajealerta">
-                    <img class="imagen" src="./Imagenes/OIP.jpeg" alt="logo alerta">
+                    <img class="imagen" src="/Imagenes/OIP.jpeg" alt="logo alerta">
                     <p>Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="contenedorb uno">
@@ -30,9 +30,10 @@
         <section class="contenedor_dos">
             <div class="subcontenedordos">
                 <div class="contenedor_dos_output">
-                    <img class="image" src="./Imagenes/search.jpeg" alt="logo buscar">
-                    <h3>Ningún mensaje fue encontrado 🔎</h3>
-                    <p> Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <img class="image" id="image" src="/Imagenes/search.jpeg" alt="logo buscar">
+                    <h3 id="initialtitle">Ningún mensaje fue encontrado 🔎</h3>
+                    <p id="initialp"> Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <p></p>
                 </div>
                 <div class="contenedorb dos">
                     <button class="boton three" id="botonthree">Copiar</button>
@@ -47,6 +48,6 @@
         <p class="footer"> Encriptador Challenge ONE &copy; Monica Jazmin Diaz 2024</p>
     </footer>
 
-    <script src="./Js/js.js" defer></script>
+    <script src="./main.js" refer></script>
 </body>
 </html>
