@@ -65,6 +65,7 @@ h1{
     font-size: 2.1875em ;
     
 }
+
 .contenedor_uno_input{
     display: flex;
     flex-direction: column;
@@ -76,6 +77,7 @@ h1{
     align-items: center;
     /*padding-left: 240px;*/
     padding-left: 3.75em;
+    
 }
 
 textarea{
@@ -84,20 +86,32 @@ textarea{
     /*height: 588px;*/
     height: 18em;
     background-color: var(--colorFondoMain);
-    border: none;
     font-family: var(--fuente3);
     /*font-size: 32px;*/
     font-size: 0.5em ;
     font-weight: 400;
+    border: 3px solid transparent;
+    transition: .3s ease all;
+}
+
+textarea:focus{
+    border: 3px solid darkblue;
+    outline: none;
+    box-shadow: 3px 0px 30px rgb(97, 156, 224);
 }
 
 .mensajealerta{
     display: flex;
     flex-direction: row;
-    /*gap:16px;*/
     gap: 0.5em;
-    /*padding-left: 260px;*/
     padding-left: 8.125em;
+    display: none;
+    color: red;
+}
+
+.mensajealerta p {
+    font-family: var(--fuenteInter);
+    font-size: 0.7em;
 }
 
 .imagen{
@@ -192,12 +206,20 @@ h3{
     text-align: center;
 }
 
+
 p{
     font-family: var(--fuenteInter);
     /*font-size: 16px;*/
     font-size: 0.5em;
     font-weight: 400;
     text-align: center;
+}
+
+#finalp {
+    font-family: var(--fuente1);
+    text-wrap: wrap;
+    font-weight: 400;
+    font-size: 0.5em;
 }
 
 
@@ -216,5 +238,6 @@ footer{
     font-size: 0.625em;
     color: var(--colorWhite);
 }
+
 
 @media 

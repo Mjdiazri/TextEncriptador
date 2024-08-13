@@ -14,17 +14,19 @@
                 <div class="contenedor_uno_title">
                     <h1>ENCRIPTEXT 2000 </h1>
                 </div>
-                <div class="contenedor_uno_input">
-                    <textarea name="entrada" id="entrada" autofocus required placeholder="Ingrese el texto aqui..."></textarea>
-                </div>
-                <div class="mensajealerta">
-                    <img class="imagen" src="/Imagenes/OIP.jpeg" alt="logo alerta">
-                    <p>Solo letras minúsculas y sin acentos</p>
-                </div>
-                <div class="contenedorb uno">
-                    <button class="boton one" id="botonone">Encriptar</button>
-                    <button class="boton two" id="botontwo">Desencriptar</button>
-                </div>
+                <!--<form>-->
+                    <div class="contenedor_uno_input">
+                        <textarea name="entrada" id="entrada" autofocus required placeholder="Ingrese el texto aqui..."></textarea>
+                    </div>
+                    <div class="mensajealerta" id="mensajealerta">
+                        <!--<img class="imagen" src="/Imagenes/OIP.jpeg" alt="logo alerta">-->
+                        <p> ⚠ <b>Error:</b> Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="contenedorb uno">
+                        <button class="boton one" id="botonone">Encriptar</button>
+                        <button class="boton two" id="botontwo">Desencriptar</button>
+                    </div>
+                <!--</form>-->
             </div>
         </section>
         <section class="contenedor_dos">
@@ -33,7 +35,7 @@
                     <img class="image" id="image" src="/Imagenes/search.jpeg" alt="logo buscar">
                     <h3 id="initialtitle">Ningún mensaje fue encontrado 🔎</h3>
                     <p id="initialp"> Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <p></p>
+                    <p id="finalp"></p>
                 </div>
                 <div class="contenedorb dos">
                     <button class="boton three" id="botonthree">Copiar</button>
