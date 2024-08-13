@@ -136,7 +136,7 @@ textarea:focus{
 
 .boton{
     /*width: 328px;*/
-    width: 16em;
+    width: 14em;
     /*height: 67px;*/
     height: 3.3em;
     border: solid var(--colorDarkBlue) 0.1em;
