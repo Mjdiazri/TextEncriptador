@@ -47,7 +47,8 @@ function condicionesIniciales(){
     document.getElementById('mensajealerta').style.display = 'none';
     document.getElementById('entrada').style.border = 'darkblue, solid';
     document.getElementById('entrada').style.boxShadow = '3px 0px 30px rgb(97, 156, 224)';
-    document.getElementById('botonthree').innerText = ("Copiar"); 
+    document.getElementById('botonthree').style.display = 'none';
+    document.getElementById('botonthree').innerText = 'Copiar';
 }
 
 
@@ -56,7 +57,25 @@ function condicionesIniciales(){
 const click = document.getElementById('botonone');
 click.addEventListener('click', encriptar);
 
+
+/*
+Falta hacer una segunda validacion para que no permita enviar datos si el formulario esta vacio
+//Funcion Segunda validacion
+function validarlength(){
+    if(texto.length <= 0){
+        document.getElementById('mensajealerta').style.display = 'block';
+        document.getElementById('entrada').style.border = 'red, solid';
+        document.getElementById('entrada').style.boxShadow = '3px 0px 30px red'; 
+    }
+}
+*/
+
+
+
+
+
 //Funcion Encriptar
+
 function encriptar(){
     ffilter = texto.split('');
     sfilter = ffilter.map((caracter) => {
@@ -88,6 +107,7 @@ function mostrarText(valor){
     document.getElementById('initialp').style.display = 'none';
     document.getElementById('finalp').style.display = 'block';
     document.getElementById('finalp').innerText = (valor);
+    document.getElementById('botonthree').style.display = 'block';
 }
 
 
