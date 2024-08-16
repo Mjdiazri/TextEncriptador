@@ -114,12 +114,6 @@ textarea:focus{
     font-size: 0.7em;
 }
 
-.imagen{
-    /*width: 16px;*/
-    width: 0.5em;
-    /*height: 16px;*/
-    height: 0.5em;
-}
 .contenedorb{
     display: flex;
     flex-direction:row;
@@ -193,6 +187,14 @@ textarea:focus{
     gap: 0.8em;
 }
 
+.contletters{
+    width: 10.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .image{
     width: 11em;
     height: 11em;
@@ -216,8 +218,11 @@ p{
 }
 
 #finalp {
+    width: 20.5em;
     font-family: var(--fuente1);
+    text-align: center;
     text-wrap: wrap;
+    overflow-wrap:break-word;
     font-weight: 400;
     font-size: 0.5em;
 }
@@ -282,6 +287,7 @@ footer{
         align-items: center;
         text-align: center;
         padding-left: 0px;
+        display: none;
     }
 
     .contenedorb{
@@ -331,12 +337,19 @@ footer{
     .contletters{
         display: flex;
         flex-direction: column;
-        gap:10px
-
+        gap:10px;
     }
     .dos{
         margin-bottom: 100px;
         padding: 2px;           
+    }
+
+    #finalp {
+        width: 60.5em;
+    }
+
+    .three{
+        width: 30em;
     }
 }
 
@@ -396,6 +409,7 @@ footer{
         text-align: center;
         padding-left: 0px;
         padding: 0;
+        display: none;
     }
 
     .contenedorb{
@@ -422,5 +436,9 @@ footer{
         align-items: center;
         gap: 0.5px;
         padding-top: 30px;
+    }
+
+    #finalp {
+        width: 40.5em;
     }
 }

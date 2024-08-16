@@ -54,14 +54,14 @@ function encriptar(){
 
         //mostrarTextEncrip();
         let valor = sfilter.join("");
-        console.log(valor)
-        mostrarText(valor)
+        console.log(valor);
+        mostrarText(valor);
     } else if (validacion === false){
         document.getElementById('mensajealerta').style.display = 'block';
         document.getElementById('entrada').style.border = 'red, solid';
         document.getElementById('entrada').style.boxShadow = '3px 0px 30px red';
-        const entrada = document.getElementById('entrada');
-        entrada.addEventListener("keydown", condicionesIniciales);
+        //const entrada = document.getElementById('entrada');
+        //entrada.addEventListener("keydown", condicionesIniciales);
     }
 }
     
@@ -125,8 +125,7 @@ function encriptar(){
     document.getElementById('mensajealerta').style.display = 'none';
     document.getElementById('entrada').style.border = 'darkblue, solid';
     document.getElementById('entrada').style.boxShadow = '3px 0px 30px rgb(97, 156, 224)';
-    document.getElementById('botonthree').innerText = ("Copiar");
-    
+    document.getElementById('botonthree').innerText = ("Copiar");    
  }
 
 //Funcion evitar mayusculas y caracteres especiales 
@@ -143,6 +142,7 @@ const copiartext = async () => {
         const textToCopy = document.getElementById('finalp').innerText
         await navigator.clipboard.writeText(textToCopy)
         console.log('Texto copiado')
+        console.log(textToCopy)
         document.getElementById('botonthree').innerText = ("Copiado")
     } catch (error) {
         console.log(error)        
