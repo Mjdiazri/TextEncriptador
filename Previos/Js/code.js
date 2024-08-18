@@ -25,7 +25,7 @@ conversor(texto);
 console.log(lista);
 */
 
-let texto = "aeiou";
+let texto = "AeIou";
 let lista = [];
 const vocales = ["o","e","i","o","u"];
 let lista2 =[];
@@ -75,3 +75,19 @@ conversor(texto);
     */
 //let lista2 = lista.toSpliced(lista[0],1,"ai")
 //console.log(lista2)
+
+/*const reg = /a/gi;
+const reg1 = /e/gi;
+const reg2 = /i/gi;
+const reg3 = /o/gi;
+const reg4 = /u/gi;
+
+let texto3 = texto.replaceAll(reg, "ai");
+let texto4 = texto.replaceAll(reg1, "enter");
+let texto5 = texto.replaceAll(reg1, "imes");
+
+console.log(texto3),
+console.log(texto4),
+console.log(texto5);
+*/
+
