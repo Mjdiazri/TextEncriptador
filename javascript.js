@@ -58,45 +58,37 @@ const click = document.getElementById('botonone');
 click.addEventListener('click', encriptar);
 
 
-/*
-Falta hacer una segunda validacion para que no permita enviar datos si el formulario esta vacio
-//Funcion Segunda validacion
-function validarlength(){
-    if(texto.length <= 0){
-        document.getElementById('mensajealerta').style.display = 'block';
-        document.getElementById('entrada').style.border = 'red, solid';
-        document.getElementById('entrada').style.boxShadow = '3px 0px 30px red'; 
-    }
-}
-*/
-
-
-
 
 
 //Funcion Encriptar
 
 function encriptar(){
-    ffilter = texto.split('');
-    sfilter = ffilter.map((caracter) => {
-    if (caracter === "a"){
-            return "ai";
-        } else if (caracter === "e"){
-            return "enter";
-        } else if (caracter === "i"){
-            return "imer";
-        } else if (caracter === "o"){
-            return "ober";
-        } else if (caracter === "u"){
-            return "ufat";
-        } else {
-            return caracter;
+    if(texto.length <= 0){
+        document.getElementById('mensajealerta').style.display = 'block';
+        document.getElementById('entrada').style.border = 'red, solid';
+        document.getElementById('entrada').style.boxShadow = '3px 0px 30px red'; 
+    } else {  
+        ffilter = texto.split('');
+        sfilter = ffilter.map((caracter) => {
+        if (caracter === "a"){
+                return "ai";
+            } else if (caracter === "e"){
+                return "enter";
+            } else if (caracter === "i"){
+                return "imer";
+            } else if (caracter === "o"){
+                return "ober";
+            } else if (caracter === "u"){
+                return "ufat";
+            } else {
+                return caracter;
         }
     })
 
     let valor = sfilter.join("");
     console.log(valor);
     mostrarText(valor);   
+    }
 }
 
 
@@ -118,13 +110,19 @@ clack.addEventListener('click', desencriptar);
 
 //Funcion desencriptar texto
 function desencriptar(){
-    ftexto = texto.replaceAll('ai','a')
+    if(texto.length <= 0){
+        document.getElementById('mensajealerta').style.display = 'block';
+        document.getElementById('entrada').style.border = 'red, solid';
+        document.getElementById('entrada').style.boxShadow = '3px 0px 30px red'; 
+    } else { 
+         ftexto = texto.replaceAll('ai','a')
                     .replaceAll('enter','e')
                     .replaceAll('imer','i')
                     .replaceAll('ober','o')
                     .replaceAll('ufat','u')
       
     mostrarText(ftexto)  
+    }
  }
 
  //limpiar campos 
